@@ -1,0 +1,33 @@
+services:
+  yolo-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: yolo-backend
+    restart: always
+    env_file: .env
+    environment:
+      - MODEL_NAME=${MODEL_NAME}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./weights:/app/weights
+      - outputs:/app/outputs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1g
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  outputs:

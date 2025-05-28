@@ -24,27 +24,6 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose를 이용해
 
 ---
 
-## 📋 파일 구조
-
-```
-.
-├── docker-compose.yml
-├── .env                  # MODEL_NAME=yolov8n.pt
-├── weights/              # 호스트에 다운로드된 가중치(.pt) 위치
-├── outputs/              # 추론 결과 이미지 저장(볼륨)
-└── backend/
-    ├── Dockerfile
-    ├── requirements.txt
-    ├── app.py
-    └── static/
-        ├── index.html
-        ├── main.js
-        ├── styles.css
-        └── README.md       # (이 파일)
-```
-
----
-
 ## ⚙️ 설치 및 실행
 
 1. **사전 조건**
@@ -90,6 +69,4 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose를 이용해
 
 ---
 
-## 📖 라이선스
 
-MIT © 당신의 이름

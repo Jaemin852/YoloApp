@@ -1,6 +1,6 @@
- fastapi
- uvicorn[standard]
- ultralytics
- python-multipart
-yolov6detect                # YOLOv6 지원
-yolov7-package              # YOLOv7 지원
+yolov8
+fastapi
+uvicorn[standard]
+ultralytics
+python-multipart
+Pillow

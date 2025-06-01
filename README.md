@@ -35,6 +35,8 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose를 이용해
    mkdir weights
    cd weights
    curl -L -o yolov8n.pt https://ultralytics.com/assets/yolov8n.pt
+   #이외에 추가할 yolov8 모델도 추가로 다운
+   #curl -L -o yolov8s.pt https://ultralytics.com/assets/yolov8s.pt
    cd ..
    ```
 

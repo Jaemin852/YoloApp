@@ -9,11 +9,24 @@
 <body>
   <h1>YOLO 객체 탐지 데모</h1>
 
-  <label for="modelSelect">모델 선택:</label>
-  <select id="modelSelect"></select>
+  <div class="controls">
+    <label for="modelSelect">모델 선택:</label>
+    <select id="modelSelect"></select>
 
-  <input type="file" id="imgInput" accept="image/*"/>
-  <button id="uploadBtn">업로드 & 탐지</button>
+    <input type="file" id="imgInput" accept="image/*"/>
+    <button id="uploadBtn">업로드 & 탐지</button>
+    <!-- 새롭게 추가된 이력 보기 버튼 -->
+    <button id="historyBtn">이력 보기</button>
+  </div>
+
   <div id="result"></div>
+
+  <!-- 결과 이력 섹션: 처음엔 숨김 -->
+  <section id="history-section" class="hidden">
+    <h2>탐지 이력</h2>
+    <div id="history-container">
+      <!-- 이력 테이블이 여기 렌더링됩니다 -->
+    </div>
+  </section>
 </body>
 </html>

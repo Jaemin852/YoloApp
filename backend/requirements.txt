@@ -1,6 +1,9 @@
-yolov8
 fastapi
 uvicorn[standard]
 ultralytics
 python-multipart
 Pillow
+
+# DB 연동을 위해 SQLAlchemy + psycopg2-binary
+SQLAlchemy>=1.4
+psycopg2-binary>=2.9

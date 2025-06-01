@@ -1,3 +1,7 @@
+/* ────────────────────────────────────────────── */
+/* 기존 스타일 (생략) */
+/* ────────────────────────────────────────────── */
+
 body {
   font-family: Arial, sans-serif;
   background: #f0f2f5;
@@ -10,46 +14,136 @@ h1 {
   margin-bottom: 20px;
 }
 
-#imgInput {
-  margin-bottom: 10px;
+/* 컨트롤 영역 */
+.controls {
+  margin-bottom: 20px;
 }
 
-#uploadBtn {
+#imgInput {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#uploadBtn, #historyBtn {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
+  margin-left: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
-#uploadBtn:hover {
+#uploadBtn:hover, #historyBtn:hover {
   background-color: #45a049;
 }
 
+/* 결과 영역 */
 #result {
   margin-top: 30px;
 }
 
-#result img {
+#result img.result-img {
   max-width: 80%;
   border: 2px solid #333;
   border-radius: 8px;
   margin-top: 20px;
 }
 
-#result ul {
+.label-list {
   list-style: none;
   padding: 0;
 }
 
-#result li {
+.label-list li {
   display: inline-block;
   background: #fff;
   margin: 5px;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 4px;
   border: 1px solid #ddd;
   font-weight: bold;
 }
+
+/* 이력 섹션 숨김 처리 */
+.hidden {
+  display: none;
+}
+
+/* ────────────────────────────────────────────── */
+/*  이력 (History) 전용 스타일  */
+/* ────────────────────────────────────────────── */
+
+#history-section {
+  margin-top: 50px;
+  text-align: left;
+}
+
+#history-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#history-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* 이력 없을 때 메시지 */
+.no-history {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* 이력 테이블 기본 스타일 */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: left;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.history-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* 라벨 리스트 */
+.history-label-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history-label-list li {
+  background: #e0f7fa;
+  color: #006064;
+  margin: 2px 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* ────────────────────────────────────────────── */

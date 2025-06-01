@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>시간 (UTC)</th>
+            <th>시간 (대한민국)</th>
             <th>모델</th>
             <th>파일명</th>
             <th>라벨</th>
@@ -103,10 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <tbody>
     `;
     records.forEach(rec => {
+      // 한국 시간으로 변환 (ko-KR, Asia/Seoul)
+      const koreaTime = new Date(rec.timestamp).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
       html += `
         <tr>
           <td>${rec.id}</td>
-          <td>${new Date(rec.timestamp).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })}</td>
+          <td>${koreaTime}</td>
           <td>${rec.model}</td>
           <td>${rec.filename}</td>
           <td>

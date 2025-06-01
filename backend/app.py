@@ -129,9 +129,10 @@ async def get_history():
             rows = conn.execute(query).fetchall()
             result = []
             for row in rows:
+                ts_utc = row.timestamp.isoformat() + "Z"
                 result.append({
                     "id": row.id,
-                    "timestamp": row.timestamp.isoformat(),
+                    "timestamp": ts_utc,
                     "model": row.model,
                     "filename": row.filename,
                     "labels": row.labels.split(",")

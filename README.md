@@ -7,7 +7,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 
 ---
 
-## 주요 기능 [Features]
+## 주요 기능 [Features]:
 - FastAPI 기반의 RESTful API 제공  
 - Ultralytics YOLOv8 모델을 이용한 실시간 객체 탐지  
 - 다양한 YOLOv8 모델 선택 기능 (yolov8n, yolov8s 등)  
@@ -84,7 +84,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
    - “이력 보기” 버튼 클릭 시 `/history` 엔드포인트에서 최근 최대 50개 이력을 가져와 테이블로 출력  
    - 이 테이블에는 ID, 시간, 모델명, 파일명, 라벨 목록이 표시됩니다.
 
-7. **어플리케이션 중지**  
+7. **애플리케이션 중지**  
    ```bash
    docker compose down
    ```

@@ -67,7 +67,6 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 
 3. **Docker Compose 빌드 & 기동**  
    ```bash
-   docker compose down
    docker compose up -d --build
    ```
    - `docker-compose.yml`에 정의된 `yolo-backend`(FastAPI)와 `db`(PostgreSQL) 컨테이너가 동시에 기동됩니다.

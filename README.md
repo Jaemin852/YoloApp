@@ -79,3 +79,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 7. **탐지 이력 조회**  
    - “이력 보기” 버튼 클릭 시 `/history` 엔드포인트에서 최근 최대 50개 이력을 가져와 테이블로 출력  
    - 이 테이블에는 ID, 시간, 모델명, 파일명, 라벨 목록이 표시됩니다.
+   - 이력을 삭제하려면 아래 명령어를 이용하세요.
+   ```bash
+   docker compose down -v
+   ```

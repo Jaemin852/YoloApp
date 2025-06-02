@@ -44,7 +44,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
    cd weights
    curl -L -o yolov8n.pt https://ultralytics.com/assets/yolov8n.pt
    curl -L -o yolov8s.pt https://ultralytics.com/assets/yolov8s.pt
-   # 필요 시 yolov8m.pt, yolov8l.pt, yolov8x.pt 등을 추가 #
+   # 필요 시 yolov8m.pt, yolov8l.pt, yolov8x.pt 등을 추가
    cd ..
    ```
 

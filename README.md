@@ -14,7 +14,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 - 이미지 업로드 및 탐지 결과 시각화 (바운딩 박스, 라벨)  
 - PostgreSQL을 이용한 탐지 이력 저장 및 조회  
 - Docker Compose를 통한 간편한 배포 및 실행  
-- (GPU 사용 시) NVIDIA GPU 가속 지원  
+- NVIDIA GPU 가속 지원  
 
 ---
 
@@ -22,7 +22,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 - **Docker Engine** 20.10.12 이상 & **Docker Compose** v2.3.3 이상  
   - Docker 설치가 되어 있지 않으면 Docker 설치 필요  
 
-- **(GPU 가속 이용 시)**  
+- GPU 가속
   NVIDIA 드라이버 + NVIDIA Container Toolkit  
   ```bash
   sudo apt-get update

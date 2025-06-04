@@ -22,7 +22,7 @@ FastAPI + Ultralytics YOLOv8 + Docker Compose + PostgreSQL을 이용해
 - **Docker Engine** 20.10.12 이상 & **Docker Compose** v2.3.3 이상  
   - Docker 설치가 되어 있지 않으면 Docker 설치 필요  
 
-- GPU 가속
+- [GPU 가속]
   NVIDIA 드라이버 + NVIDIA Container Toolkit  
   ```bash
   sudo apt-get update
